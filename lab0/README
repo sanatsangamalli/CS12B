@@ -1,0 +1,6 @@
+This is a simple program which prints the 
+phrase "hello, world"
+
+Files:
+hello.c: The C source file
+README: This README

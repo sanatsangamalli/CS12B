@@ -1,0 +1,20 @@
+cat.c is a program which performs the functions of the cat 
+command in unix. Since this is a short program, all the code
+is in main. I wrote an if-statement to handle the base case 
+where there is only one argument entered in on the comand line. 
+There is a while loop to make sure that it terminates when there
+is nothing left to be read. Afterward I had a for loop. Inside,
+I set the file descriptor equal to open function with parameters
+of the current argument and the read-only flag. I also wrote an
+if-statement to handle the error case. Then I wrote a do-while 
+loop to run while there are arguments to be read. Then I called
+the read and write functions, and wrote if-statements to handle the
+error cases. Outside the for loop, I closed the file descriptor and
+wrote another if-statement to handle the error case. Then I wrote
+a new line for seperation. Then the return statement. 
+
+Files:
+cat.c: The program written is C.
+hello.c: C program which prints "hello, world"
+Makefile: Will help to run this program(Makefile for cat)
+README: This README

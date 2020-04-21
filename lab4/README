@@ -1,0 +1,20 @@
+increment.c is a program that takes in a command line argument to spawn
+a number of threads specified by the user. Using a thread safe function
+to prevent a race condition, it increments a global variable each time it 
+calls that function(1000 times total, specified in the instructions). So
+each thread will call this function 1000 times total, and if coded correctly
+will produce the same result each time it is run(number of threads * 1000).
+If not executed correctly, it will produce a race condition.
+mutex: A mutex is something that, when acquired by a certain thread, will
+allow that specific thread to run its specific instructions while at the 
+same time halting other threads' instructions from executing until they 
+acquire the mutex. Only one thread at a time can acquire the mutex.
+race condition: A bug where the operating system will try to execute
+multiple instructions at the same time and produce a result that is wrong. Since 
+the conditions to enter a race condition are very hard to fulfill, this
+only happens a small percentage of the time. 
+
+Files:
+increment.c: The program written in C.
+Makefile: Will help to run this program(Makefile for lab 4)
+README: This README

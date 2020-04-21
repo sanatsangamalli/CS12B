@@ -1,0 +1,13 @@
+arraylist.c. This program will print a prompt, asking for one of three actions, 
+“Insert”, “Print”, or “Quit.” The user will respond with the first letter of the 
+option he or she chooses. Based on the user input, the program will perform a certain
+function. To compile this code, run "make", "make all", or "make arraylist", 
+and then run "./arraylist". 
+4.  C style strings occupy n+1 bytes in memory, but in line 343, it is only 
+allocating n bytes. 
+5. line 444 is where it's allocated, by the realloc function.
+
+Files:
+arraylist.c :The code for this program written in C
+Makefile: Helps run the program
+README: This README

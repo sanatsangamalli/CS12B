@@ -1,0 +1,14 @@
+gdbLab.c was a program written for us in C intentionally with errors. We had to find 
+the errors using the gdb. I found a segmentation fault occured in findDistance() 
+function on line 109 according to gdb. When I investigated further I found that 
+firstPoint and secondPoint are both 0 when passed into findDistance(). thisCoordinate.x = x 
+should be thisCoordinate->x = x for lines 78-79. In addition, on line 75 there is no initial 
+memory allocated on the heap for thisCoordinate. So I had to include stdlib.h and used calloc().
+Also on line 87 for the return statment, you should just return thisCoordinate instead 
+of its memory address.
+
+Files:
+gdbLab.c : This program written in C for us.
+Makefile: Makes running the program easier.
+README: This README.
+
