@@ -1,0 +1,22 @@
+banhammer.c is a program which uses C and H files to map bad words. I
+use 2 bloom filters per instructions to map a word to see if it's a bad
+word, and then map it to a hash table to see if there is a translation 
+for the word that is more politically correct. Depending on the case,
+you list the errors and the new words. This is the case whether you read
+in user input or a file. It will also handle the cases where the words entered
+are in both the badspeak and the newspeak files. Most code was provided by DDEL.
+
+Files:
+banhammer.c: The program written in C.
+bv.c: The functionality of the bitvector written in C
+bv.h: The bitvector header file/interface given to us by Professor Long
+bf.h: A header file for bloom filters, which outline was given by Professor Long
+hash.c: A C file for the implementaion of hash tables, some code was given by Professor Long
+hash.h: The header file for hash.c given by Professor Long
+ll.c: The implementaion for linked lists written in C
+ll.h: The header file for linked lists given by Professor Long
+aes.c: This is an implementation of the AES128 algorithm given by Professor Long
+aes.h: This is the header for file the AES128 algorithm given by Professor Long
+words.l: A lexical analyzer given by Professor Long
+Makefile: Will help to run this program(Makefile for assignment 3)
+README: This README

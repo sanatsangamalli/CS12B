@@ -1,0 +1,28 @@
+parfait.c is a program which uses bv.c and sieve.c in order to print out numbers(till 100000 ususally). 
+It prints out whether they are prime, composite, or perfect. If it iseither or both of 
+the latter 2, then the number's factors will be printed out as well. I have a bitvector 
+created and then I run it through sieve. Then I initialzie 2 variables to represent
+the perfect number via the formula given in the assignment1 prompt.  In main I loop through 
+all the numbers. If I find that they are prime via valBit() function then I just print the number. 
+Otherwise, I call the printFactorization() function to print the prime factors. I have an
+array set up to store all the factors(up till 32 which is the max). I also have 2 indices that I use. 
+This allows me to store the larger factors  at the end of the array and the smaller factors at the 
+beginning of the array. I also have a copy of the number passed through. I loop through, and if the 
+number is divisible by the index, the number is prime, and not equal to the index, then I handle the 
+cases. If I find that the copy variable is divisible by the index and prime, then I store it. Otherwise, 
+it means that I have found a prime factor, and I reset the index in the loop to 1. After that loop ends 
+I have another one to print all the factors stored in the array. Back in main, I have 2 variables to 
+help determine the next perfect number. If  the number is the next perfect number, then I handle that case. 
+I have to reprint the number and indicate that it is a perfect number. I have a for loop to print all the 
+factors of the number(non-prime as well). Then I run through another for loop to determine the next perfect
+number using the formula given in the assignment1 prompt.
+
+
+Files:
+parfait.c: The program written in C.
+bv.c: The functionality of the bitvector written in C
+bv.h: The bitvector header file/interface given to us by Professor Long
+sieve.c: The Sieve of Eratosthenes written in C, given by Professor Long
+sieve.h: The seive header file/interface given to us by Professor Long
+Makefile: Will help to run this program(Makefile for assignment 1)
+README: This README

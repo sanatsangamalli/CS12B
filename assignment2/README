@@ -1,0 +1,23 @@
+sorting.c is a program which uses C and H files for minsort, bubblesort,
+insertionsort, quicksort, and mergesort, as well as bv.c anc bv.h to take 
+in command line arguments and perform certain functions based on what is 
+entered in throught the command line. You can run certain sorts, change the
+seed used to generate the random numbers, change the size of the array and 
+the number of elements printed. Most code was provided by DDEL.
+
+Files:
+sorting.c: The program written in C.
+bv.c: The functionality of the bitvector written in C
+bv.h: The bitvector header file/interface given to us by Professor Long
+minsort.c: The sort minsort written in C, given by Professor Long
+minsort.h: The minsort header file/interface given to us by Professor Long
+bubblesort.c: The sort bubblesort written in C, given by Professor Long
+bubblesort.h: The bubblesort header file/interface given to us by Professor Long
+insertionsort.c: The sort insertionsort written in C, given by Professor Long
+insertionsort.h: The insertionsort header file/interface given to us by Professor Long
+quicksort.c: The sort quicksort written in C, given by Professor Long
+quicksort.h: The quicksort header file/interface given to us by Professor Long
+mergesort.c: The sort mergesort written in C, given by Professor Long
+mergesort.h: The mergesort header file/interface given to us by Professor Long
+Makefile: Will help to run this program(Makefile for assignment 2)
+README: This README

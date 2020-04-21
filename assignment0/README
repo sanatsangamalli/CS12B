@@ -1,0 +1,28 @@
+This assignment is called left, right, and center. First you run main. 
+The user is prompted to enter a seed from which random numbers are 
+generated and for the number of players in the game(can be up to 10).
+I kept an array to keep track of the amount of money each player is. 
+I first initialized each value to $3 per the game rules. Inside of a 
+while loop(with condition of checking if the number of active players 
+is not equal to 1), I had two nested for loops that would run the game.
+I kept track of the amount of money each player had, the amountof money 
+in the pot, and the number of active players. For my outer for loop, I 
+had an if statement because if the player has no money they get no rolls 
+so it would just skip the code inside. It also checked if the number of 
+active players equaled one. That meant the game was over. Inside, I had 
+an if-else block to figureout the number of rolls a player got, to run my 
+nested for loop that many times. In my nested for loop, I generated a random 
+face using the rand() method. I had a switch statement to decide what to then 
+do. For the cases Left and Right,I had to handle cases where the index fell
+off the end of the array. I also had a method to check the number of players 
+in the game by checking how much money they had. After the while loop(meaning someone won), 
+I had a for loop to check the index of the person that won(they were the only one 
+that had money) and printed the winning message. Ultimately, I kept track 
+of the number of active players, the amount of money in the pot, and the number 
+of rolls for each player. 
+
+Files:
+lrc.c: The program written in C.
+Makefile: Will help to compile the program(Makefile for lrc)
+README: This README
+
